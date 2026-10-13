@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="buttonPressed" format="color" />
+    <attr name="bottomNavigationSelected" format="color" />
+    <attr name="bottomNavigationNotSelected" format="color" />
+    <attr name="leafColor" format="color"/>
+
+
+    <declare-styleable name="MathView">
+        <attr name="text" format="string"/>
+        <attr name="engine" format="enum">
+            <enum name="KaTeX" value="0"/>
+            <enum name="MathJax" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

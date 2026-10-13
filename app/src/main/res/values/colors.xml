@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Primary brand color. -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorOnPrimary">#aaffffff</color>
+    <color name="colorPrimaryVariant">#303F9F</color>
+    <!-- Secondary brand color. -->
+    <color name="colorSecondary">#2196F3</color>
+    <color name="colorOnSecondary">#aa000000</color>
+    <color name="colorSecondaryVariant">#1976D2</color>
+    <!-- surface color-->
+    <color name="colorSurface">#fff</color>
+    <color name="colorOnSurface">#000</color>
+    <!-- background color-->
+    <color name="backgroundColor">#EDEDED</color>
+    <color name="colorOnBackground">#000000</color>
+    <color name="cardBackgroundColor">#fff</color>
+    <color name="backGroundTint">#fff</color>
+    <color name="strokeColor">#AA00FF</color>
+    <color name="buttonPressed">#9FA8DA</color>
+    <color name="bottomNavigationSelected">#2196F3</color>
+    <color name="bottomNavigationNotSelected">#212121</color>
+    <color name="leafColorDay">#388E3C</color>
+
+
+    <!--dark theme-->
+    <!-- Primary brand color Night. -->
+    <color name="colorPrimaryNight">#232d3a</color>
+    <color name="colorOnPrimaryNight">#fff</color>
+    <color name="colorPrimaryVariantNight">#181D27</color>
+    <!-- Secondary brand color Night. -->
+    <color name="colorSecondaryNight">#bb86fc</color>
+    <color name="colorOnSecondaryNight">#fff</color>
+    <color name="colorSecondaryVariantNight">#c38fff</color>
+    <!-- surface color Night-->
+    <color name="colorSurfaceNight">#000000</color>
+    <color name="colorOnSurfaceNight">#fff</color>
+    <!-- background color Night-->
+    <color name="backgroundColorNight">#1f2732</color>
+    <color name="colorOnBackgroundNight">#ffffff</color>
+    <color name="cardBackgroundColorNight">#2A293E</color>
+    <color name="backgroundTintNight">#04132C</color>
+    <color name="strokeColorNight">#039BE5</color>
+    <color name="buttonPressedNight">#37474F</color>
+    <color name="bottomNavigationSelectedNight">#039BE5</color>
+    <color name="bottomNavigationNotSelectedNight">#EEEEEE</color>
+    <color name="leafColorNight">#388E3C</color>
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="green">#388E3C</color>
+</resources>

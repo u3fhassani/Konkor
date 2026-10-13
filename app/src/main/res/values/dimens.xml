@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="marginButtonDimen">16dp</dimen>
+    <dimen name="materialDialogCorner">16dp</dimen>
+
+</resources>

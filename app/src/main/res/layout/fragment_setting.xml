@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?backgroundColor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?backgroundColor"
+        android:paddingBottom="8dp"
+        tools:context=".ui.fragment.options.SettingFragment">
+
+
+        <requestFocus />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView_setting_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="?cardBackgroundColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="?strokeColor"
+            app:strokeWidth="1dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:text="تغییر تم برنامه" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_setting_darkTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="start"
+                    android:layoutDirection="rtl">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_setting_dayTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="      تم روز" />
+
+                    <RadioButton
+                        android:id="@+id/rb_setting_nightTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="      تم شب" />
+
+                    <RadioButton
+                        android:id="@+id/rb_setting_defaultTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:text="      تم پیش فرض گوشی" />
+
+
+                </RadioGroup>
+
+
+            </FrameLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView_setting_screenOn"
+            style="@style/Widget.MaterialComponents.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:padding="8dp"
+            app:cardBackgroundColor="?cardBackgroundColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            app:layout_constraintTop_toBottomOf="@id/cardView_setting_theme"
+            app:strokeColor="?strokeColor"
+            app:strokeWidth="1dp">
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_setting_screenOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="   روشن ماندن صفحه" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.MaterialComponents.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:cardBackgroundColor="?cardBackgroundColor"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintTop_toBottomOf="@id/cardView_setting_screenOn"
+            app:strokeColor="?strokeColor"
+            app:strokeWidth="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="8dp">
+
+
+                <TextView
+                    android:id="@+id/textView_setting_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="فونت سوالات"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_setting_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:gravity="start"
+                    android:layoutDirection="rtl"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView_setting_font">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_setting_font_badr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="      فونت بدر" />
+
+                    <RadioButton
+                        android:id="@+id/rb_setting_font_nazanin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="      فونت ب نازنین" />
+
+                    <RadioButton
+                        android:id="@+id/rb_setting_font_mitra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="      فونت میترا" />
+
+                    <RadioButton
+                        android:id="@+id/rb_setting_font_morvarid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="      فونت مروارید" />
+
+
+                </RadioGroup>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+

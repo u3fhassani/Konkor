@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/years"
+    app:startDestination="@id/yearKonkorFragment">
+
+    <fragment
+        android:id="@+id/lessonFragment"
+        android:name="com.project.konkor.ui.fragment.yearKonkor.LessonFragment"
+        android:label="">
+
+        <argument
+            android:name="yearModel"
+            app:argType="com.project.konkor.model.YearModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/yearKonkorFragment"
+        android:name="com.project.konkor.ui.fragment.yearKonkor.YearKonkorFragment"
+        android:label="@string/konkorYears">
+        <action
+            android:id="@+id/action_yearKonkorFragment_to_lessonFragment"
+            app:destination="@id/lessonFragment" />
+    </fragment>
+
+</navigation>

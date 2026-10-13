@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_auth"
+    app:startDestination="@id/authFragment">
+
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.project.konkor.ui.fragment.auth.AuthFragment"
+        android:label="AuthFragment">
+        <action
+            android:id="@+id/action_authFragment_to_forgetPasswordFragment"
+            app:destination="@id/forgetPasswordFragment" />
+        <action
+            android:id="@+id/action_authFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_authFragment_to_aboutUsFragment2"
+            app:destination="@id/aboutUsFragment2" />
+        <action
+            android:id="@+id/action_authFragment_to_privacyPolicyFragment2"
+            app:destination="@id/privacyPolicyFragment2" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="https://konkor.auth/{email}" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetPasswordFragment"
+        android:name="com.project.konkor.ui.fragment.auth.ForgetPasswordFragment"
+        android:label="@string/forgetPassword" />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.project.konkor.ui.fragment.CategoryFragment"
+        android:label="CategoryFragment" />
+    <fragment
+        android:id="@+id/aboutUsFragment2"
+        android:name="com.project.konkor.ui.fragment.options.AboutUsFragment"
+        android:label="fragment_about_us"
+        />
+    <fragment
+        android:id="@+id/privacyPolicyFragment2"
+        android:name="com.project.konkor.ui.fragment.options.PrivacyPolicyFragment"
+        android:label="@string/privacyPolicy1" />
+</navigation>

@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Konkor" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimaryNight</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantNight</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryNight</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorSecondaryNight</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantNight</item>
+        <item name="colorOnSecondary">@color/colorOnSecondaryNight</item>
+        <!-- surface color-->
+        <item name="colorSurface">@color/colorSurfaceNight</item>
+        <item name="colorOnSurface">@color/colorOnSurfaceNight</item>
+        <!-- background color-->
+        <item name="backgroundColor">@color/backgroundColorNight</item>
+        <item name="colorOnBackground">@color/colorOnBackgroundNight</item>
+        <item name="android:textColor">@color/white</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="cardBackgroundColor">@color/cardBackgroundColorNight</item>
+        <item name="strokeColor">@color/strokeColorNight</item>
+        <!-- Customize your theme here. -->
+        <item name="buttonPressed">@color/buttonPressedNight</item>
+        <item name="bottomNavigationSelected">@color/bottomNavigationSelectedNight</item>
+        <item name="bottomNavigationNotSelected">@color/bottomNavigationNotSelectedNight</item>
+
+        <item name="md_corner_radius">16dp</item>
+        <item name="md_color_button_text">@color/white</item>
+
+        <item name="leafColor">@color/leafColorNight</item>
+    </style>
+
+
+
+
+
+
+</resources>

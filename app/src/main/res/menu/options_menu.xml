@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/group_option_menu">
+
+
+        <item
+            android:id="@+id/settingFragment"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="@string/setting"
+            android:orderInCategory="1"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/favoriteFragment"
+            android:icon="@drawable/ic_baseline_bookmark_border_24"
+            android:orderInCategory="2"
+            android:title="@string/favoriteQuestion" />
+        <item
+            android:id="@+id/methodFragment"
+            android:icon="@drawable/ic_umbrella_24"
+            android:orderInCategory="3"
+            android:title="@string/method" />
+
+        <item
+            android:id="@+id/aboutUsFragment"
+            android:icon="@drawable/ic_information_button"
+            android:title="@string/aboutUs"
+            android:orderInCategory="5"
+            />
+
+        <item android:id="@+id/commentFragment"
+            android:title="@string/comment"
+            android:orderInCategory="4"
+            android:icon="@drawable/ic_baseline_comment_24"
+            />
+
+        <item android:id="@+id/privacyPolicyFragment"
+            android:title="@string/privacyPolicy"
+            android:orderInCategory="6"
+            android:icon="@drawable/ic_baseline_security_24"
+            />
+
+        <item
+            android:id="@+id/signOut"
+            android:title="@string/logOut"
+            android:icon="@drawable/ic_logout"
+            android:orderInCategory="7"
+            />
+
+
+    </group>
+
+</menu>

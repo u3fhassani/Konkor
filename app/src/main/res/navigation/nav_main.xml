@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/years">
+
+
+    <include app:graph="@navigation/years" />
+    <include app:graph="@navigation/profile" />
+    <include app:graph="@navigation/result" />
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.project.konkor.ui.fragment.options.SettingFragment"
+        android:label="@string/setting"
+        />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.project.konkor.ui.fragment.options.AboutUsFragment"
+        android:label="@string/aboutUs"
+        />
+    <fragment
+        android:id="@+id/methodFragment"
+        android:name="com.project.konkor.ui.fragment.options.MethodFragment"
+        android:label="@string/learningWithMethod" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.project.konkor.ui.fragment.options.FavoriteFragment"
+        android:label="@string/favoriteQuestion" />
+    <fragment
+        android:id="@+id/commentFragment"
+        android:name="com.project.konkor.ui.fragment.options.CommentFragment"
+        android:label="@string/comment" />
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.project.konkor.ui.fragment.options.PrivacyPolicyFragment"
+        android:label="@string/privacyPolicy1" />
+
+</navigation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/result"
+    app:startDestination="@id/resultFragment">
+
+    <fragment
+        android:id="@+id/responseFragment"
+        android:name="com.project.konkor.ui.fragment.result.ResponseFragment"
+        android:label="@string/resultExam">
+        <argument
+            android:name="yearModel"
+            app:argType="com.project.konkor.model.YearModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.project.konkor.ui.fragment.result.ResultFragment"
+        android:label="@string/result">
+        <action
+            android:id="@+id/action_resultFragment_to_responseFragment"
+            app:destination="@id/responseFragment" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.options.AboutUsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayoutAboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="?colorPrimary"
+                android:layoutDirection="ltr"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                >
+
+                <TextView
+                    android:id="@+id/textViewAboutUsToolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="70dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/colorSurface"
+                    android:textSize="18sp"
+                    android:text="@string/aboutUs" />
+
+                <ImageView
+                    android:id="@+id/imageViewAboutUsBackPressed"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_gravity="end|center_vertical"
+                    android:padding="2dp"
+                    app:srcCompat="@drawable/ic_baseline_arrow_forward_24" />
+
+
+
+
+            </FrameLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_aboutUs_logo"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="12dp"
+            app:lottie_rawRes="@raw/email_send"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:layout_constraintTop_toBottomOf="@id/appBarLayoutAboutUs"
+            />
+
+        <TextView
+            android:id="@+id/textView_about_us_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/about_description"
+            android:lineSpacingExtra="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lottie_aboutUs_logo" />
+
+        <TextView
+            android:id="@+id/textView_about_us_yousef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/yousef_hassani"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_about_us_description" />
+
+        <TextView
+            android:id="@+id/textView_about_us_garshasb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/garshasb_taheri"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_about_us_yousef" />
+
+        <TextView
+            android:id="@+id/textView_aboutUs_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="ایمیل برنامه"
+            app:layout_constraintEnd_toEndOf="@+id/textView_about_us_garshasb"
+            app:layout_constraintTop_toBottomOf="@+id/textView_about_us_garshasb" />
+
+        <TextView
+            android:id="@+id/textView_aboutUs_emailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:autoLink="email|web"
+            android:minHeight="48dp"
+            android:text="@string/emailText"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView_about_us_garshasb"
+            app:layout_constraintTop_toBottomOf="@+id/textView_aboutUs_email" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

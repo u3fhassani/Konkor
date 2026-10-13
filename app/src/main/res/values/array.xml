@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="category">
+        <item>ریاضی</item>
+        <item>تجربی</item>
+        <item>انسانی</item>
+        <item>هنر</item>
+        <item>زبان</item>
+    </string-array>
+
+</resources>

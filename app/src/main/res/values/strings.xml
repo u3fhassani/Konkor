@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">kontest</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="learning">آموزش</string>
+    <string name="result">کارنامه</string>
+    <string name="question">سؤالات</string>
+    <string name="profile">پروفایل</string>
+
+    <string name="riazi">ریاضی</string>
+    <string name="tajrobi">تجربی</string>
+    <string name="ensani">انسانی</string>
+    <string name="zaban">زبان</string>
+    <string name="honar">هنر</string>
+    <string name="shear">ز دانش دل پیر برنا بود !!!</string>
+    <string name="signUp">ایجاد حساب کاربری</string>
+    <string name="forgetPassword">فراموشی رمز عبور</string>
+    <string name="currentPassword">رمز ورود</string>
+    <string name="email">ایمیل</string>
+    <string name="lastName">نام خانوادگی</string>
+    <string name="firstName">نام</string>
+    <string name="repeatPassword">تکرار رمز وررود</string>
+    <string name="profilePicture">انتخاب عکس پروفایل</string>
+    <string name="signIn">ورود</string>
+    <string name="start">شروع</string>
+    <string name="time">زمان :</string>
+    <string name="questionCount">تعداد سو‌ٔالات :</string>
+    <string name="year">سال</string>
+    <string name="endExam">پایان آزمون</string>
+    <string name="viewResult">مشاهده نتیجه</string>
+    <string name="responseRate">درصد آزمون :</string>
+    <string name="falseAnswer">تعداد پاسخ های اشتباه :</string>
+    <string name="trueAnswer">تعداد پاسخ های صحیح :</string>
+    <string name="questionNotAnswer">تعداد سؤالات پاسخ نداده :</string>
+    <string name="allAnswer">تعداد کل پاسخ ها :</string>
+    <string name="watched">مشاهده شد</string>
+    <string name="createAt">تاریخ عضویت :</string>
+    <string name="remainTime">اعتبار باقیمانده :</string>
+    <string name="pay">افزایش اعتبار</string>
+    <string name="age">سال تولد</string>
+    <string name="category">رشته آزمونی</string>
+    <string name="hadafGhozari">هدف گذاری</string>
+    <string name="addTarget">افزودن هدف</string>
+    <string name="name">نام :</string>
+    <string name="family">نام خانوادگی :</string>
+    <string name="yearsOld">سال تولد :</string>
+    <string name="category2">رشته تحصیلی :</string>
+    <string name="cancel">انصراف</string>
+    <string name="confirm">تأیید</string>
+    <string name="information">اطلاعات</string>
+    <string name="setting">تنظیمات</string>
+    <string name="aboutUs">درباره ما</string>
+    <string name="method">متد</string>
+    <string name="contactUs">ارتباط با ما</string>
+    <string name="favoriteQuestion">سوالات برگزیده</string>
+
+    <string name="forgetPasswordDescription">لینک بازیابی رمز عبور برای شما ارسال شد لطفا ایمیل خود را چک نمایید . اگر موفق نبودید لطفا بعد از ۱۰ دقیقه تلاش کنید.</string>
+    <string name="inputEmail">لطفا ایمیل خود را وارد نمایید</string>
+    <string name="doseForgetPassword">رمز عبور خود را فراموش کرده اید ؟</string>
+    <string name="editProfile">ویرایش پروفایل</string>
+    <string name="learningWithMethod">یادگیری با متد</string>
+    <string name="resultExam">نتیجه آزمون</string>
+    <string name="konkorYears">سال های کنکور</string>
+    <string name="saveEditProfile">ثبت تغییرات</string>
+    <string name="repeatNewPassword">تکرار رمز جدید</string>
+    <string name="newPassword">رمز جدید</string>
+    <string name="oldPassword">رمز قدیمی</string>
+    <string name="enterDate">مشخص کردن تاریخ :</string>
+    <string name="comment">نظرات و پیشنهادات</string>
+
+    <string name="about_description">گروه برنامه نویسی «امرداد»* فعالیت  خود را از سال نود و هشت در راستای آسوده سازی شرایط و اعتلای علم و‌فرهنگ،به صورت جدی آغاز کرده است.
+اهداف ما طبق نیاز های کاربر ها تعیین شده و مهم ترین افتخار ما در اولویت قرار دادن مخاطبانمان است.</string>
+    <string name="yousef_hassani">- یوسف حسنی:«برنامه نویس،ایده پرداز،مهندس برق،مدیر بخش اعلانات»</string>
+    <string name="garshasb_taheri">- گرشاسب طاهری:«روابط عمومی،فعال فرهنگی،ایده پرداز، کارشناس زبان خارجه»</string>
+    <string name="emailText">u3fhassani@gmail.com</string>
+    <string name="confirmComment">ثبت نظر</string>
+    <string name="yourComment">نظرات شما</string>
+    <string name="font_test">متن آزمایشی برای دیدن تغییرات فونت</string>
+    <string name="lesson_response">درس :</string>
+    <string name="date_response">تاریخ تست زنی :</string>
+    <string name="rate_response">درصد آزمون</string>
+    <string name="questionCount_response">تعداد سوال</string>
+    <string name="trueAnswer_response">پاسخ درست</string>
+    <string name="falseAnswer_response">پاسخ اشتباه</string>
+    <string name="notAnswer_response">پاسخ نداده</string>
+    <string name="comment_description">"لطفا هر گونه نظر یا پیشنهاد یا شکایاتی که دارید با ما در میان بگزارید ."</string>
+    <string name="default_notification_channel_id">Default Notification</string>
+    <string name="logOut">خروج از حساب کاربری</string>
+    <string name="trueNumber">گزینه صحیح :</string>
+    <string name="failedConnection">متاسفانه به اینترنت دسترسی ندارید لطفا دوباره تلاش کنید</string>
+    <string name="tryConnection">تلاش مجدد</string>
+    <string name="applicationName">Kontest</string>
+    <string name="privacyPolicy">سیاست های حریم خصوصی</string>
+    <string name="privacyPolicy1">حریم خصوصی</string>
+    <string name="exitFromActivity">خروج از صفحه آزمون</string>
+
+
+</resources>

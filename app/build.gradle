@@ -1,0 +1,109 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.kotlin.parcelize)
+    alias(libs.plugins.hilt.android)
+    alias(libs.plugins.navigation.safeargs)
+    alias(libs.plugins.google.services)
+}
+
+android {
+    namespace 'com.project.konkor'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.project.konkor"
+        minSdk 23
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    signingConfigs {
+        release {
+            if (project.hasProperty('KEYSTORE_FILE') && file(project.property('KEYSTORE_FILE')).exists()) {
+                storeFile file(project.property('KEYSTORE_FILE'))
+                storePassword project.findProperty('KEYSTORE_PASSWORD') ?: ""
+                keyAlias project.findProperty('KEY_ALIAS') ?: "key0"
+                keyPassword project.findProperty('KEY_PASSWORD') ?: ""
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+            if (signingConfigs.release.storeFile != null) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+}
+
+configurations.configureEach {
+    resolutionStrategy.force 'androidx.exifinterface:exifinterface:1.4.2'
+}
+
+dependencies {
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.androidx.constraintlayout
+    implementation libs.androidx.viewpager2
+    implementation libs.androidx.recyclerview
+    implementation libs.androidx.fragment.ktx
+
+    // Lifecycle
+    implementation libs.androidx.lifecycle.viewmodel.ktx
+    implementation libs.androidx.lifecycle.livedata.ktx
+    implementation libs.androidx.lifecycle.runtime.ktx
+    implementation libs.androidx.lifecycle.viewmodel.savedstate
+
+    // Navigation
+    implementation libs.androidx.navigation.fragment.ktx
+    implementation libs.androidx.navigation.ui.ktx
+    implementation libs.androidx.navigation.dynamic.features.fragment
+
+    // Room
+    implementation libs.androidx.room.runtime
+    ksp libs.androidx.room.compiler
+
+    // Hilt
+    implementation libs.hilt.android
+    ksp libs.hilt.compiler
+
+    // Coroutines
+    implementation libs.kotlinx.coroutines.core
+    implementation libs.kotlinx.coroutines.android
+
+    // Retrofit & Network
+    implementation libs.retrofit
+    implementation libs.retrofit.converter.gson
+    implementation libs.okhttp.logging.interceptor
+
+    // Third-party UI
+    implementation libs.picasso
+    implementation libs.lottie
+    implementation libs.circleimageview
+    implementation libs.material.dialogs.core
+    implementation libs.android.math
+
+    // Firebase
+    implementation libs.firebase.messaging.ktx
+    implementation libs.firebase.analytics.ktx
+}

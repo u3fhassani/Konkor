@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/profile_menu"
+        android:visible="false">
+
+        <item
+            android:id="@+id/edit_profile"
+            android:title="ویرایش پروفایل"
+
+            />
+        <item
+            android:id="@+id/edit_password"
+            android:title="ویرایش رمز ورود" />
+
+        <item
+            android:id="@+id/premium_account"
+            android:title="خرید اشتراک" />
+
+    </group>
+</menu>

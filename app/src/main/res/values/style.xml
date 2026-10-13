@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="editTextOutLineBoxStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">?strokeColor</item>
+    </style>
+
+
+    <style name="ThemeChangeFontToBadr" parent="Theme.Konkor">
+        <item name="android:textViewStyle">@style/TextViewStyleBadrFont</item>
+        <item name="textAppearanceButton">@style/ButtonStyleBadrFont</item>
+        <item name="android:editTextStyle">@style/textInputEditTextStyleBadrFont</item>
+        <item name="md_font_button">@font/font_badr_font_family</item>
+    </style>
+
+    <style name="ThemeChangeFontToMorvarid" parent="Theme.Konkor">
+        <item name="android:textViewStyle">@style/TextViewStyleMorvaridFont</item>
+        <item name="textAppearanceButton">@style/ButtonStyleMorvaridFont</item>
+        <item name="android:editTextStyle">@style/textInputEditTextStyleMorvaridFont</item>
+        <item name="md_font_button">@font/font_morvarid_font_family</item>
+    </style>
+
+    <style name="ThemeChangeFontToBNazanin" parent="Theme.Konkor">
+        <item name="android:textViewStyle">@style/TextViewStyleBNazaninFont</item>
+        <item name="textAppearanceButton">@style/ButtonStyleBNazaninFont</item>
+        <item name="android:editTextStyle">@style/textInputEditTextStyleBNazaninFont</item>
+        <item name="md_font_button">@font/font_b_nazanin_font_family</item>
+    </style>
+
+    <style name="ThemeChangeFontToMitra" parent="Theme.Konkor">
+        <item name="android:textViewStyle">@style/TextViewStyleMitraFont</item>
+        <item name="textAppearanceButton">@style/ButtonStyleMitraFont</item>
+        <item name="editTextStyle">@style/textInputEditTextStyleMitraFont</item>
+        <item name="md_font_button">@font/font_mitra_font_family</item>
+    </style>
+
+
+    <style name="textInputEditTextStyleBadrFont" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/font_badr_font_family</item>
+        <item name="fontFamily">@font/font_badr_font_family</item>
+    </style>
+    <style name="TextViewStyleBadrFont" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/font_badr_font_family</item>
+        <item name="fontFamily">@font/font_badr_font_family</item>
+    </style>
+    <style name="ButtonStyleBadrFont" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/font_badr_font_family</item>
+        <item name="fontFamily">@font/font_badr_font_family</item>
+    </style>
+
+    <style name="textInputEditTextStyleMorvaridFont" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/font_morvarid_font_family</item>
+        <item name="fontFamily">@font/font_morvarid_font_family</item>
+    </style>
+    <style name="TextViewStyleMorvaridFont" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/font_morvarid_font_family</item>
+        <item name="fontFamily">@font/font_morvarid_font_family</item>
+    </style>
+    <style name= "ButtonStyleMorvaridFont" parent= "TextAppearance.MaterialComponents.Button" >
+        <item name= "android:fontFamily" >@font/font_morvarid_font_family</item>
+        <item name= "fontFamily" >@font/font_morvarid_font_family</item>
+    </style>
+
+    <style name="textInputEditTextStyleBNazaninFont" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/font_b_nazanin_font_family</item>
+        <item name="fontFamily">@font/font_b_nazanin_font_family</item>
+    </style>
+    <style name="TextViewStyleBNazaninFont" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/font_b_nazanin_font_family</item>
+        <item name="fontFamily">@font/font_b_nazanin_font_family</item>
+    </style>
+    <style name= "ButtonStyleBNazaninFont" parent= "TextAppearance.MaterialComponents.Button" >
+        <item name= "android:fontFamily" >@font/font_b_nazanin_font_family</item>
+        <item name= "fontFamily" >@font/font_b_nazanin_font_family</item>
+    </style>
+
+    <style name="textInputEditTextStyleMitraFont" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/font_mitra_font_family</item>
+        <item name="fontFamily">@font/font_mitra_font_family</item>
+    </style>
+    <style name="TextViewStyleMitraFont" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/font_mitra_font_family</item>
+        <item name="fontFamily">@font/font_mitra_font_family</item>
+    </style>
+    <style name= "ButtonStyleMitraFont" parent= "TextAppearance.MaterialComponents.Button" >
+        <item name= "android:fontFamily" >@font/font_mitra_font_family</item>
+        <item name= "fontFamily" >@font/font_mitra_font_family</item>
+    </style>
+
+
+    <!--    <style name="DialogAnimation">-->
+    <!--        <item name="android:windowEnterAnimation">@anim/slide_up</item>-->
+    <!--        <item name="android:windowExitAnimation">@anim/slide_bottom</item>-->
+    <!--    </style>-->
+
+<!--    <style name="Theme.Konkor.Starting" parent="Theme.SplashScreen">-->
+
+<!--        // Set the splash screen background, animated icon, and animation duration.-->
+<!--        <item name="windowSplashScreenBackground">@color/colorSurface</item>-->
+
+<!--        // Use windowSplashScreenAnimatedIcon to add either a drawable or an-->
+<!--        // animated drawable. One of these is required.-->
+<!--        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_graduate</item>-->
+<!--        <item name="windowSplashScreenAnimationDuration">2000</item>  # Required for-->
+<!--        # animated icons-->
+
+<!--        // Set the theme of the Activity that directly follows your splash screen.-->
+<!--        <item name="postSplashScreenTheme">@style/Theme.Konkor</item>  # Required.-->
+
+<!--    </style>-->
+
+
+
+</resources>

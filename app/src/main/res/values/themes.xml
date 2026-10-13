@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Konkor" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+        <!-- surface color-->
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+        <!-- background color-->
+        <item name="backgroundColor">@color/backgroundColor</item>
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+        <item name="android:textColor">@color/black</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="cardBackgroundColor">@color/cardBackgroundColor</item>
+        <item name="strokeColor">@color/strokeColor</item>
+        <!-- Customize your theme here. -->
+<!--        <item name="android:textViewStyle">@style/DefaultAppTextViewStyle</item>-->
+<!--        <item name="android:buttonStyle">@style/DefaultAppButtonStyle</item>-->
+        <item name="buttonPressed">@color/buttonPressed</item>
+        <item name="bottomNavigationSelected">@color/bottomNavigationSelected</item>
+        <item name="bottomNavigationNotSelected">@color/bottomNavigationNotSelected</item>
+
+        <item name="md_corner_radius">16dp</item>
+        <item name="md_color_button_text">@color/black</item>
+
+        <item name="leafColor">@color/leafColorDay</item>
+    </style>
+
+
+
+
+
+
+</resources>

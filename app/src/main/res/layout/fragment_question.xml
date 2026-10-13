@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    tools:context=".ui.fragment.yearKonkor.QuestionFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_question_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView_question_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_timer"
+                android:fontFamily="@font/far_morvarid"
+                android:gravity="center"
+                android:textColor="@color/colorSurface"
+                android:textSize="20sp"
+                android:visibility="gone"
+                tools:text="28:33" />
+
+
+            <TextView
+                android:id="@+id/textView_question_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="28dp"
+                android:layout_toStartOf="@id/imageView_question_backPressed"
+                android:layout_toEndOf="@id/imageViewFavoriteQuestion"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/colorSurface"
+                android:textSize="18sp"
+                tools:text="ادبیات انسانی سال 1391" />
+
+            <ImageView
+                android:id="@+id/imageView_question_backPressed"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="14dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="2dp"
+                app:srcCompat="@drawable/ic_baseline_arrow_forward_24" />
+
+            <ImageView
+                android:id="@+id/imageViewFavoriteQuestion"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:background="?selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/ic_bookmark_border_48px" />
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_question_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+            <TextView
+                android:id="@+id/tv_question_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/time"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_question_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_question_time"
+                app:layout_constraintEnd_toStartOf="@+id/tv_question_time"
+                app:layout_constraintTop_toTopOf="@+id/tv_question_time"
+                tools:text="18 دقیقه" />
+
+
+            <TextView
+                android:id="@+id/tv_question_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/questionCount"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tv_question_time"
+                app:layout_constraintTop_toBottomOf="@+id/tv_question_time" />
+
+            <TextView
+                android:id="@+id/textView_question_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_question_count"
+                app:layout_constraintEnd_toStartOf="@+id/tv_question_count"
+                app:layout_constraintTop_toTopOf="@+id/tv_question_count"
+                tools:text="25" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_question_start"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="8dp"
+                android:backgroundTint="?cardBackgroundColor"
+                android:text="@string/start"
+                android:textColor="?colorOnSurface"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_question_count"
+                app:strokeColor="?strokeColor" />
+
+
+            <View
+                android:id="@+id/view_question_line_right"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="?attr/colorOnSurface"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/button_question_start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button_question_start"
+                app:layout_constraintTop_toTopOf="@+id/button_question_start" />
+
+            <View
+                android:id="@+id/view_question_line_left"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="?attr/colorOnSurface"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/button_question_start"
+                app:layout_constraintEnd_toStartOf="@id/button_question_start"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button_question_start" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:padding="4dp"
+                app:layout_constraintBottom_toTopOf="@id/button_question_end"
+                app:layout_constraintTop_toBottomOf="@id/button_question_start"
+                app:layout_constraintVertical_bias="1.0"
+                tools:layout_editor_absoluteX="93dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_question_end"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="?cardBackgroundColor"
+                android:text="@string/endExam"
+                android:textColor="?colorOnSurface"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:strokeColor="?strokeColor" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_question_result"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="?cardBackgroundColor"
+                android:text="@string/viewResult"
+                android:textColor="?colorOnSurface"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/recyclerView_question"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_question_count"
+                app:strokeColor="?strokeColor" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <ProgressBar
+        android:id="@+id/lottie_question_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:translationZ="5dp"
+        android:visibility="gone" />
+
+    <include layout="@layout/network_error_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/failedConnection"
+        android:visibility="gone"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:background="@drawable/dialog_shape_edit_profile"
+    >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_dialogTarget"
+        style="@style/editTextOutLineBoxStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/addTarget"
+        app:hintTextColor="?attr/colorOnSurface"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInput_dialogTarget_target"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layoutDirection="rtl"
+            android:textColor="?attr/colorOnSurface" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_dialogTarget_year"
+        style="@style/editTextOutLineBoxStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:padding="0dp"
+        app:helperText="سال"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout_dialogTarget_month"
+        app:layout_constraintEnd_toStartOf="@+id/textInputLayout_dialogTarget_month"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout_dialogTarget_month">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText_dialogTarget_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="4"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="1400" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_dialogTarget_month"
+        style="@style/editTextOutLineBoxStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:helperText="ماه"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout_dialogTarget_day"
+        app:layout_constraintEnd_toStartOf="@+id/textInputLayout_dialogTarget_day"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout_dialogTarget_year"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout_dialogTarget_day">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText_dialogTarget_month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="01" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_dialogTarget_day"
+        style="@style/editTextOutLineBoxStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:helperText="روز"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout_dialogTarget_month"
+        app:layout_constraintTop_toBottomOf="@+id/textView_dialogTarget_enterDate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText_dialogTarget_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="01" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView_dialogTarget_enterDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/enterDate"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout_dialogTarget"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_dialogTarget" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
